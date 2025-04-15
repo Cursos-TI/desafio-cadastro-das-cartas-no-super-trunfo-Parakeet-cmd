@@ -25,7 +25,7 @@ int main() {
    float pib1, pib2;
    int pontos1, pontos2;
 
-   //Nivel Aventureiro - acrescimo de densidade e PIB per Capta
+   //Nivel Aventureiro - acrescimo de densidade e PIB per Capita
 
    float densidade1, densidade2;
    float pib_per_capita1, pib_per_capita2;
@@ -75,7 +75,7 @@ int main() {
     printf("PIB: %.2f bilhões\n",pib1);
     printf("Pontos turísticos: %d\n", pontos1);
     printf("Densidade populacional: %2.f hab/km²\n", densidade1);
-    printf("PIB per Capita: %2.f bilhões por mil pessoas\n", pib_per_capta1);
+    printf("PIB per Capita: %2.f bilhões por mil pessoas\n", pib_per_capita1);
 
     printf("\n--- Carta 2 ---\n");
     printf("Código: %s\n", codigo2);
@@ -84,7 +84,7 @@ int main() {
     printf("PIB: %.2f bilhões\n",pib2);
     printf("Pontos turísticos: %d\n", pontos2);
     printf("Densidade populacional: %2.f hab/km²\n", densidade2);
-    printf("PIB per Capita: %2.f bilhões por mil pessoas\n", pib_per_capta2);
+    printf("PIB per Capita: %2.f bilhões por mil pessoas\n", pib_per_capita2);
 
 
     return 0;
