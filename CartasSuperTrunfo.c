@@ -1,13 +1,14 @@
 /*
 ------------------------------------------------------------
 Desafio Super Trunfo - Países
-Nível: Novato
+Nível: Aventureiro
 Tema: Cadastro de Cartas de Cidades
 Autor: [Lucas Costa da Silva]
-Data: [10/04/2025]
+Data: [14/04/2025]
 Descrição:
 Este programa cadastra duas cartas com informações de cidades,
 incluindo código, população, área, PIB e pontos turísticos.
+Nessa nova versão temos novos atributos, sendo eles a Densidade popilacional e PIB per capta.
 ------------------------------------------------------------
 */
 
@@ -23,6 +24,11 @@ int main() {
    float area1, area2;
    float pib1, pib2;
    int pontos1, pontos2;
+
+   //Nivel Aventureiro - acrescimo de densidade e PIB per Capta
+
+   float densidade1, densidade2;
+   float pib_per_capita1, pib_per_capita2;
 
     
     // Cadastro das Cartas:
@@ -51,6 +57,13 @@ int main() {
     printf("Número de pontos turísticos:");
     scanf("%d", &pontos2);
 
+    //Cálculo dos atributos derivados:
+    densidade1 = populacao1 / area1;
+    densidade2 = populacao2 / area2;
+
+    pib_per_capita1 = pib1 / populacao1;
+    pib_per_capita2 = pib2 / populacao2;
+
 
     
     // Exibição dos Dados das Cartas:
@@ -61,6 +74,8 @@ int main() {
     printf("Área: %.2f Km²\n", area1);
     printf("PIB: %.2f bilhões\n",pib1);
     printf("Pontos turísticos: %d\n", pontos1);
+    printf("Densidade populacional: %2.f hab/km²\n", densidade1);
+    printf("PIB per Capita: %2.f bilhões por mil pessoas\n", pib_per_capta1);
 
     printf("\n--- Carta 2 ---\n");
     printf("Código: %s\n", codigo2);
@@ -68,6 +83,8 @@ int main() {
     printf("Área: %.2f Km²\n", area2);
     printf("PIB: %.2f bilhões\n",pib2);
     printf("Pontos turísticos: %d\n", pontos2);
+    printf("Densidade populacional: %2.f hab/km²\n", densidade2);
+    printf("PIB per Capita: %2.f bilhões por mil pessoas\n", pib_per_capta2);
 
 
     return 0;
